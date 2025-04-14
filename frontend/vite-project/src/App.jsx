@@ -5,15 +5,18 @@ import AddEvent from './pages/AddEvents';
 import DonationForm from './pages/DonationForm';
 import AllEventsPage from './pages/AllEvents';
 import AllDonorsPage from './pages/AllDonors';
-import DonateToEvent from './pages/DonateToEvent';
 import DonationPage from './pages/DonateToEvent';
 import AssignEventPage from './pages/AssignVolunteers';
 import ViewAssignmentsPage from './pages/AllAssignments';
+import LandingPage from './pages/LandingPage';
+
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="/donation" element={<DonationForm />} />
         <Route path="/volunteer" element={<VolunteerForm />} />
         <Route path="/allvolunteers" element={<AllVolunteers />} />
